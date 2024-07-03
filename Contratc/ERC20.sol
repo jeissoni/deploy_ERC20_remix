@@ -102,7 +102,7 @@ contract ERC20 {
                         INTERNAL MINT/BURN LOGIC
     //////////////////////////////////////////////////////////////*/
 
-    function _mint(address to, uint256 amount) internal virtual {
+    function mint(address to, uint256 amount) external virtual {
         totalSupply += amount;
 
         // Cannot overflow because the sum of all user
